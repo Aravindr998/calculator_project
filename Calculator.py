@@ -3,6 +3,7 @@ from tkinter import *
 button = [None] * 10
 window = Tk()
 window.geometry("500x500")
+window.title("Calculator")
 i: int
 for i in range(10):
     button[i] = Button(window, text=i, width=4, height=2)
@@ -34,5 +35,7 @@ equal_button.grid(rowspan=2, row=5, column=4)
 point_button.grid(row=6, column=3)
 del_button.grid(row=6, column=1)
 
+label = Label(window, text="Welcome", bg="gray", width=21, height=2)
+label.grid(row=1, columnspan=4, column=1)
 window.mainloop()
-print('ok')
+
