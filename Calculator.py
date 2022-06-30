@@ -7,67 +7,64 @@ window.title("Calculator")
 
 
 def display_one():
-    label.config(text=1)
+    label.config(text=label.cget("text")+'1')
 
 
 def display_two():
-    label.config(text=2)
+    label.config(text=label.cget("text")+'2')
 
 
 def display_three():
-    label.config(text=3)
+    label.config(text=label.cget("text")+'3')
 
 
 def display_four():
-    label.config(text=4)
+    label.config(text=label.cget("text")+'4')
 
 
 def display_five():
-    label.config(text=5)
+    label.config(text=label.cget("text")+'5')
 
 
 def display_six():
-    label.config(text=6)
+    label.config(text=label.cget("text")+'6')
 
-
-def display_six():
-    label.config(text=6)
 
 
 def display_seven():
-    label.config(text=7)
+    label.config(text=label.cget("text")+'7')
 
 
 def display_eight():
-    label.config(text=8)
+    label.config(text=label.cget("text")+'8')
 
 
 def display_nine():
-    label.config(text=9)
+    label.config(text=label.cget("text")+'9')
 
 
 def display_zero():
-    label.config(text=0)
+    label.config(text=label.cget("text")+'0')
 
 
 def display_plus():
-    label.config(text='+')
+    label.config(text=label.cget("text")+'+')
 
 
 def display_minus():
-    label.config(text='-')
+    label.config(text=label.cget("text")+'-')
 
 
 def display_mult():
-    label.config(text='*')
+    label.config(text=label.cget("text")+'*')
 
 
 def display_div():
-    label.config(text='/')
+    label.config(text=label.cget("text")+'/')
 
 
 def display_equal():
-    label.config(text='=')
+    label.config(text=label.cget("text")+'=')
 
 
 def clear():
@@ -75,7 +72,7 @@ def clear():
 
 
 def display_point():
-    label.config(text='.')
+    label.config(text=label.cget("text")+'.')
 
 
 button_one = Button(window, text=1, width=4, height=2, command=display_one)
