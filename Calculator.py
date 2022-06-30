@@ -30,7 +30,6 @@ def display_six():
     label.config(text=label.cget("text")+'6')
 
 
-
 def display_seven():
     label.config(text=label.cget("text")+'7')
 
@@ -64,7 +63,8 @@ def display_div():
 
 
 def display_equal():
-    label.config(text=label.cget("text")+'=')
+    operation = label.cget("text")
+    label.config(text=eval(operation))
 
 
 def clear():
